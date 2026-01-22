@@ -6,14 +6,34 @@ Template-driven HTML email module system for Kent State University newsletters.
 
 This repository contains reusable HTML email templates for building Slate-compatible newsletters. Each template is a modular building block that can be combined to create complete emails.
 
-## Quick Start
+## Getting Started
+
+### Option 1: Download Starter Kit (Recommended)
+
+Download `KSU_Email_Work_Starter.zip` from this repo. It includes:
+- `CLAUDE.md` - Complete build instructions for Claude Code
+- `config/colleges.json` - College-specific configurations
+- `config/test_lists.json` - Internal test routing lists
+- Empty `projects/` and `ARCHIVE/` folders
+
+### Option 2: Clone This Repo
 
 ```bash
-# Clone this repo
-git clone https://github.com/[YOUR_ORG]/ksu-email-modules.git
+git clone https://github.com/djporte1/em_production.git
+```
 
-# Templates are in /modules/
-ls modules/
+### Option 3: Fetch Templates Directly (for Claude Code)
+
+Access raw template files via URL:
+```
+https://raw.githubusercontent.com/djporte1/em_production/main/modules/01_FEATURED_STORY.txt
+https://raw.githubusercontent.com/djporte1/em_production/main/modules/05_STORY_BLOCK.txt
+https://raw.githubusercontent.com/djporte1/em_production/main/docs/QA_CHECKLIST.md
+```
+
+**Base URL pattern:**
+```
+https://raw.githubusercontent.com/djporte1/em_production/main/{path}
 ```
 
 ## Module Reference
