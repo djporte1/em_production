@@ -1,0 +1,226 @@
+<!--
+MODULE: WRAPPER + HEADER
+PURPOSE: Email HTML structure, preheader text, and Kent State header image
+USAGE: Use this as the opening structure for every newsletter
+PLACEHOLDERS: {{PROJECT_ID}} - Project identifier (e.g., 26ALR148)
+NOTES:
+  - Contains responsive CSS for email clients
+  - MSO conditionals for Outlook compatibility
+  - "Can't see this email?" preheader
+  - Standard Kent State Alumni & Friends header
+  - Use header image: 25ALR146_ALUMNIandFRIENDS_eFlashHeader.png
+-->
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,100,300,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+    <title></title>
+    <style type="text/css">/*<![CDATA[*/}
+      body {
+          margin: 0px !important;
+          padding: 0px !important;
+          -webkit-text-size-adjust: 100% !important;
+          -ms-text-size-adjust: 100% !important;
+          -webkit-font-smoothing: antialiased !important;
+          font-family: 'Open+Sans', Arial, sans-serif;
+      }
+      td {
+          vertical-align: top;
+      }
+      img {
+          border: 0 !important;
+          outline: none !important;
+      }
+      table {
+          border-collapse: collapse;
+          mso-table-lspace: 0px;
+          mso-table-rspace: 0px;
+      }
+      td {
+          border-collapse: collapse;
+          mso-line-height-rule: exactly;
+          mso-table-lspace: 0px;
+          mso-table-rspace: 0px;
+      }
+      a, span {
+          mso-line-height-rule: exactly;
+      }
+      a {
+          mso-line-height-rule: exactly;
+          color: #808080;
+          text-decoration: none !important;
+      }
+      .ExternalClass * {
+          line-height: 100%;
+      }
+      .applewhiltelink a {
+          color: inherit !important;
+          text-decoration: none !important;
+      }
+      .video img {
+          width: 100%;
+          height: auto;
+      }
+
+      @media only screen and (max-width:650px) {
+      .block {
+          display: block !important;
+          width: 100% !important;
+      }
+      .mobile {
+          text-align: center !important;
+      }
+      table[class=wrapper] {
+          width: 100% !important;
+          max-width: none !important;
+      }
+      table[class=wrapper_special] {
+          width: 100% !important;
+      }
+      table[class=main_table] {
+          width: 100% !important;
+      }
+      td[class=pad_side] {
+          padding-left: 14px !important;
+          padding-right: 14px !important;
+      }
+      td[class=hide], br[class=hide] {
+          display: none !important;
+      }
+      img[class=full_img] {
+          width: 100% !important;
+          height: auto !important;
+      }
+      img[class=full_img_special] {
+          width: 100% !important;
+          height: auto !important;
+      }
+      td[class=text], td[class=black], td[class=black2], td[class=red], td[class=white], td[class=white1], td[class=white2], td[class=grey] {
+      }
+      td[class=pad_bottom] {
+      }
+      td[class=pad_top] {
+          padding-top: 20px !important;
+      }
+      td[class=fix_height] {
+          height: 20px !important;
+      }
+      td[class=video] img {
+          width: 100% !important;
+          height: auto !important;
+      }
+      h3 {
+          margin: 0 !important;
+          padding: 0 !important;
+      }
+      }
+    /*]]>*/
+    </style>
+    <!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings> <o:AllowPNG /> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+  </head>
+  <body>
+    <div style="display: none; font-size: 1px; color: #e5e5e5; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all;">
+      ‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;
+    </div>
+
+    <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="650px">
+      <tbody>
+        <tr><!-- Emailer Starts Here-->
+          <td align="center">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="table-layout: fixed;" width="650">
+            <tbody>
+              <tr>
+                <td>
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="650">
+                  <tbody>
+                    <tr>
+                      <td class="hide" width="30"></td>
+                      <td>
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                          <tr>
+                            <td class="fix_height" height="25"></td>
+                          </tr>
+                          <tr>
+                            <td>
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="600">
+                              <tbody>
+                                <tr>
+                                  <td align="center" style="font-family: 'Open+Sans', Arial, sans-serif; font-size: 12px; line-height: 15px; color: #333333;"><span class="black">Can't see this email?</span>&nbsp; <a href="browser" style="color: #002664; text-decoration: none; font-size: 11px;" target="_blank">View it in your browser.</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fix_height" height="25"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      </td>
+                      <td class="hide" width="30"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                </td>
+              </tr>
+              <!-- Header -->
+              <tr>
+                <td valign="top">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="table-layout: auto;" width="650">
+                  <tbody>
+                    <tr>
+                      <td>
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="650">
+                        <tbody>
+                          <tr>
+                            <td bgcolor="#fff">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="650">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                  <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="650">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center" class="pad_bottom"><a href="https://www.kent.edu/alumni-and-giving"><img alt="Kent State University - Alumni and Friends E-Flash" class="full_img" src="https://connect.kent.edu/www/images/25ALR146_ALUMNIandFRIENDS_eFlashHeader.png" style="display: block; border: none; max-width: 650px;" width="650" /></a></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                </td>
+              </tr>
+              <!-- Header //-->
+            </tbody>
+          </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!--Main Content/Template-->
+
+    <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" max-width="650" style="table-layout: fixed;">
+      <tbody>
+        <tr>
+          <td>
+          <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="table-layout: fixed; background-color: #ffffff; max-width: 650px; max-width: 650px;">
+            <tbody>
+              <tr>
+                <td>
+
+<!-- ALL MODULES GO BELOW HERE -->

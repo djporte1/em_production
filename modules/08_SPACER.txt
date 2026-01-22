@@ -1,0 +1,25 @@
+<!--
+MODULE: SPACER
+PURPOSE: 22px vertical spacing between modules
+USAGE: Add between most modules for consistent spacing
+PLACEHOLDERS: None
+NOTES:
+  - Standard 22px height
+  - Use between most modules
+  - EXCEPTION: Do not use between Story Tiles in the same set
+  - Example placements:
+    * After Section Dividers (already included in that module)
+    * Between Story Tile sets and other modules
+    * Between Story Block and other modules
+    * Between major sections
+-->
+
+<!-- SPACER MODULE -->
+  <table border="0" class="wrapper" style="table-layout: fixed; max-width: 100%; width: 650px;">
+    <tbody>
+      <tr>
+        <td height="22" style="line-height: 1px; font-size: 1px; height: 20px;"><p style="font-size:1px">​​&nbsp;</p></td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- END SPACER MODULE -->

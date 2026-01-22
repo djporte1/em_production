@@ -1,0 +1,135 @@
+<!--
+MODULE: STORY BLOCK
+PURPOSE: Side-by-side image (left) and text (right) layout
+USAGE: For single stories with prominent image
+PLACEHOLDERS:
+  - {{PROJECT_ID}} - Project identifier
+  - {{IMAGE_DESCRIPTOR}} - Image filename descriptor
+  - {{IMAGE_ALT}} - Alt text for image
+  - {{HEADLINE}} - Story headline (24px, Kent Blue, bold)
+  - {{BODY_TEXT}} - Body paragraph (18px, black)
+  - {{CTA_URL}} - Button destination URL
+  - {{CTA_TEXT}} - Button text
+WIREFRAME MAPPING:
+  - Extract image path: {{PROJECT_ID}}_PX_STORYBLOCK_{{DESCRIPTOR}}.jpg
+  - Image is 240px wide on left
+  - Text content on right (375px wide)
+  - Top-right rounded corner on image (50px radius)
+NOTES:
+  - White background
+  - Image left (230px column), text right (375px column)
+  - Can also be used as text-only (remove image table)
+  - Add spacer after module (use 08_SPACER.txt)
+-->
+
+<!-- STORYBLOCK MODULE BEGINS -->
+<table align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="table-layout: fixed; width: 650px;">
+  <tbody>
+    <tr>
+      <td class="pad_side">
+
+        <!-- LEFT COLUMN (Image) -->
+        <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="width: 230px; float:left">
+          <tbody>
+            <tr>
+              <td class="hide" width="45"></td>
+              <td align="center" valign="top">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                  <tbody>
+                    <tr>
+                      <td height="15" style="line-height: 1px; font-size: 1px;"></td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top">
+                        <div style="display: inline-block; vertical-align: top;">
+                          <a href="{{CTA_URL}}">
+                            <img alt="{{IMAGE_ALT}}" class="full_img" role="presentation" src="https://connect.kent.edu/www/images/{{PROJECT_ID}}_PX_STORYBLOCK_{{IMAGE_DESCRIPTOR}}.jpg" style="display: block; border: none; border-top-right-radius: 50px;" width="240">
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fix_height" height="40" style="line-height: 1px; font-size: 1px;"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- RIGHT COLUMN (Text) -->
+        <table align="right" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="width: 375px; float:right">
+          <tbody>
+            <tr>
+              <td align="left" valign="top">
+                <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                  <tbody>
+                    <tr>
+                      <td height="15" style="line-height: 1px; font-size: 1px;"></td>
+                    </tr>
+                    <tr>
+                      <td align="left" data-read-aloud-multi-block="true" valign="top">
+                        <h3 class="mobile" style="font-family: 'Open+Sans', Arial, sans-serif; font-weight: bold; font-size: 24px; color: #003976; padding-left: 10px; padding-right: 10px; padding-top: 0px !important; line-height: 1 !important;">
+                          {{HEADLINE}}
+                        </h3>
+                        <p class="mobile" style="font-family: 'Open+Sans', Arial, sans-serif; font-weight: normal; font-size: 18px; color: #101010; text-align: left; padding-left: 10px; padding-right: 10px; padding-bottom:10px;">
+                          {{BODY_TEXT}}
+                        </p>
+
+                        <div style="text-align:center;">
+                          <!--[if mso]>
+                          <table align="center" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td align="center">
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{CTA_URL}}" style="height:50px;v-text-anchor:middle;width:315px;" arcsize="0%" stroke="f" fillcolor="#EFAB00">
+                                  <w:anchorlock/>
+                                  <center style="color:#003976;font-family:Arial,sans-serif;font-size:18px;font-weight:bold;">
+                                    {{CTA_TEXT}}
+                                  </center>
+                                </v:roundrect>
+                              </td>
+                            </tr>
+                          </table>
+                          <![endif]-->
+
+                          <!--[if !mso]><!-- -->
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                            <tbody>
+                              <tr>
+                                <td align="center" bgcolor="#EFAB00" style="border-radius:0px;">
+                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center" style="font-family:'Open Sans', Arial, sans-serif; font-size:18px; font-weight:bold; line-height:22px; color:#003976; text-align:center; padding:12px 24px;">
+                                          <a href="{{CTA_URL}}" style="text-decoration:none; color:#003976; display:inline-block;" target="_blank">{{CTA_TEXT}}</a>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <!--</td>
+                           </tr>
+                          </table>
+                          <![endif]-->
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td height="15" style="line-height: 1px; font-size: 1px;"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- STORYBLOCK MODULE ENDS -->

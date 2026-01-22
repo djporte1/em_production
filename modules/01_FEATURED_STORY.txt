@@ -1,0 +1,103 @@
+<!--
+MODULE: FEATURED STORY
+PURPOSE: Hero content with large image, headline, body text, and CTA button
+USAGE: First major content module after header
+PLACEHOLDERS:
+  - {{PROJECT_ID}} - Project identifier (e.g., 26ALR148)
+  - {{IMAGE_DESCRIPTOR}} - Short descriptor for image (e.g., GT for Giving Tuesday)
+  - {{HEADLINE}} - Main headline (34px, Kent Blue, bold, centered)
+  - {{SUBHEADLINE}} - Secondary headline (20px, Kent Blue, bold, centered)
+  - {{BODY_TEXT}} - Body paragraph (18px, black, centered)
+  - {{CTA_URL}} - Button destination URL
+  - {{CTA_TEXT}} - Button text (e.g., "Give Now", "Learn More")
+  - {{ALT_TEXT}} - Image alt text for accessibility
+WIREFRAME MAPPING:
+  - Extract image path from wireframe: {{PROJECT_ID}}_PX_FEATURE_{{DESCRIPTOR}}.png
+  - Copy headline exactly as written
+  - Copy body text exactly (do not edit)
+  - Extract CTA button text and URL
+NOTES:
+  - Image is full-width (650px)
+  - Button has Gold background (#EFAB00), Blue text (#003976)
+  - Includes MSO conditional for Outlook compatibility
+  - 40px bottom spacing
+-->
+
+<!-- FEATURED MODULE BEGINS | FY25 -->
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="table-layout:fixed;min-width:100%;max-width:650px;">
+  <tbody>
+    <tr>
+      <td><table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="width:100%;border-spacing:0;max-width:650px !important;">
+          <tbody>
+            <tr>
+              <td align="center" style="padding:0;margin:0;line-height:0;"><a href="{{CTA_URL}}"><img alt="{{ALT_TEXT}}" class="full_img" src="https://connect.kent.edu/www/images/{{PROJECT_ID}}_PX_FEATURE_{{IMAGE_DESCRIPTOR}}.png" style="display:block;width:100%;padding:0;margin:0;"></a></td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top"><table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="width:650px;">
+          <tbody>
+            <tr>
+              <td class="hide" width="45"></td>
+              <td class="fix_height" height="10" style="line-height:1px;font-size:1px;"><p>&nbsp;</p></td>
+              <td class="hide" width="45"></td>
+            </tr>
+            <tr>
+              <td class="hide" width="45"></td>
+              <td align="left" class="grey" style="font-family:'Open+Sans',Arial,sans-serif;font-weight:normal;color:#101010;text-align:left;"><h3 align="center" style="font-family:'Open+Sans',Arial,sans-serif;font-size:34px;color:#003976;align:center;font-weight:bold;padding-left:10px;padding-right:10px;">{{HEADLINE}}</h3>
+                <h3 align="center" style="font-family:'Open+Sans',Arial,sans-serif;font-size:20px;color:#003976;align:center;font-weight:bold;padding-left:10px;padding-right:10px;">{{SUBHEADLINE}}</h3>
+                <p align="center" style="font-family:'Open+Sans',Arial,sans-serif;font-weight:normal;font-size:18px;color:#101010;text-align:center;padding-left:10px;padding-right:10px;padding-bottom:10px;">{{BODY_TEXT}}</p>
+
+                <!--[if mso]>
+<table align="center" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">
+                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{CTA_URL}}" style="height:50px;v-text-anchor:middle;width:220px;" arcsize="0%" stroke="f" fillcolor="#EFAB00">
+                  <w:anchorlock/>
+                  <center style="color:#003976;font-family:Arial,sans-serif;font-size:18px;font-weight:bold;">
+                    {{CTA_TEXT}}
+                  </center>
+                </v:roundrect>
+                </td>
+ </tr>
+</table>
+<![endif]-->
+
+                <!--[if !mso]><!-- -->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                  <tbody>
+                    <tr>
+                      <td align="center" bgcolor="#EFAB00" style="border-radius:0px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                          <tbody>
+                            <tr>
+                              <td align="center" style="font-family:'Open Sans', Arial, sans-serif; font-size:18px; font-weight:bold; line-height:22px; color:#003976; text-align:center; padding:12px 24px;">
+                                <a href="{{CTA_URL}}" style="text-decoration:none; color:#003976; display:inline-block;" target="_blank">{{CTA_TEXT}}</a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!--</td>
+ </tr>
+</table>
+<![endif]-->
+
+                <p style="font-size:0px">&nbsp;</p>
+                </td>
+              <td class="hide" width="45"></td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+    <tr>
+      <td class="fix_height" height="40" style="line-height:1px;font-size:1px;"></td>
+    </tr>
+  </tbody>
+</table>
+<div style="display:block; height:0; line-height:0; font-size:0; clear:both;">&nbsp;</div>
+<!-- FEATURED MODULE ENDS | FY25 -->

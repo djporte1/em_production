@@ -1,0 +1,218 @@
+<!--
+MODULE: STORY TILES (2 tiles per module)
+PURPOSE: Two-column alternating layout with image and text
+USAGE: Featured stories with images, headlines, and CTAs
+PLACEHOLDERS:
+  - {{PROJECT_ID}} - Project identifier
+  - {{TILE1_IMAGE}} - Image filename for first tile
+  - {{TILE1_ALT}} - Alt text for first tile image
+  - {{TILE1_HEADLINE}} - Headline for first tile (24px, Kent Blue, bold)
+  - {{TILE1_BODY}} - Body text for first tile (18px, black)
+  - {{TILE1_CTA_URL}} - CTA URL for first tile
+  - {{TILE1_CTA_TEXT}} - CTA button text for first tile
+  - {{TILE2_IMAGE}} - Image filename for second tile
+  - {{TILE2_ALT}} - Alt text for second tile image
+  - {{TILE2_HEADLINE}} - Headline for second tile
+  - {{TILE2_BODY}} - Body text for second tile
+  - {{TILE2_CTA_URL}} - CTA URL for second tile
+  - {{TILE2_CTA_TEXT}} - CTA button text for second tile
+WIREFRAME MAPPING:
+  - First tile: Image RIGHT, text LEFT
+  - Second tile: Image LEFT, text RIGHT
+  - Extract image paths: {{PROJECT_ID}}_PX_STORYTILE_{{DESCRIPTOR}}.jpg
+  - Images are 324px wide
+  - Grey background (#EAE9E5)
+NOTES:
+  - Two tiles per module (not separate modules)
+  - Alternating layout automatically handled
+  - Do NOT add spacer between tiles in same module
+  - Add spacer after complete module (use 08_SPACER.txt)
+-->
+
+<!-- STORYTILES MODULE BEGINS -->
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="table-layout: fixed; max-width: 100%; width: 650px;">
+  <tbody>
+    <!-- TILE 1: Image RIGHT, Text LEFT -->
+    <tr>
+      <td bgcolor="#EAE9E5">
+      <table border="0" cellpadding="0" cellspacing="0" class="wrapper" style="width: 650px;">
+        <tbody>
+          <tr>
+            <td align="left" style="background: #eae9e5;">
+            <table align="right" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="border: none; border-collapse: collapse; width: 324px; float: right">
+              <tbody>
+                <tr>
+                  <td align="center" class="pad_top" style="border: none; mso-border-right-alt: solid #ffffff .5pt; border-collapse: collapse;"><a href="{{TILE1_CTA_URL}}" target="_blank"><img alt="{{TILE1_ALT}}" class="full_img_special" height="auto" src="https://connect.kent.edu/www/images/{{PROJECT_ID}}_PX_STORYTILE_{{TILE1_IMAGE}}.jpg" style="text-align: center; width: 100%; height: auto" width="324" /></a></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table border="0" cellpadding="5" cellspacing="0" class="wrapper" style="max-width: 300px; padding-left: 10px; float: left; width: 300px;">
+              <tbody>
+                <tr>
+                  <td valign="top">
+                  <table align="left" border="0" cellpadding="0" cellspacing="0" style="float: left; width: 100%;">
+                    <tbody>
+                      <tr>
+                        <td class="pad_side">
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" style="float: left; width: 100%">
+                          <tbody>
+                            <tr>
+                              <td class="fix_width" style="width:15px"></td>
+                              <td class="white">
+                              <h3 class="mobile" style="font-family: 'Open+Sans', Arial, sans-serif; font-weight: bold; font-size: 24px; color: #003976; padding-right: 10px">
+                                {{TILE1_HEADLINE}}
+                              </h3>
+
+                              <p class="mobile" style="font-family: 'Open+Sans', Arial, sans-serif; font-weight: normal; font-size: 18px; color: #101010; text-align: left; padding-right: 10px; padding-bottom:10px">
+                                {{TILE1_BODY}}
+                              </p>
+
+                              <div style="text-align:center;">
+                                <!--[if mso]>
+                          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{TILE1_CTA_URL}}" style="height:50px;v-text-anchor:middle;width:220px;" arcsize="0%" stroke="f" fillcolor="#EFAB00">
+                            <w:anchorlock/>
+                            <center style="color:#003976;font-family:Arial,sans-serif;font-size:18px;font-weight:bold;">
+                              {{TILE1_CTA_TEXT}}
+                            </center>
+                          </v:roundrect>
+                          <![endif]--><!--[if !mso]><!-- -->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                  <tbody>
+                                    <tr>
+                                      <td align="center" bgcolor="#EFAB00" style="border-radius:0px;">
+                                      <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                        <tbody>
+                                          <tr>
+                                            <td align="center" style="font-family:'Open Sans', Arial, sans-serif; font-size:18px; font-weight:bold; line-height:22px; color:#003976; text-align:center; padding:12px 24px;"><a href="{{TILE1_CTA_URL}}" style="text-decoration:none; color:#003976; display:inline-block;" target="_blank">{{TILE1_CTA_TEXT}}</a></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <!--<![endif]-->
+                              </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fix_height" height="15"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- TILE 2: Image LEFT, Text RIGHT -->
+<table align="center" bgcolor="#EAE9E5" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="table-layout: fixed; max-width: 100%; width: 650px;">
+  <tbody>
+    <tr>
+      <td align="left" bgcolor="#EAE9E5">
+      <table align="center" bgcolor="#EAE9E5" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="width: 650px;">
+        <tbody>
+          <tr>
+            <td align="left" bgcolor="#EAE9E5" style="background: #eae9e5;">
+            <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="width: 324px; float:left">
+              <tbody>
+                <tr>
+                  <td align="center" class="pad_top" style="width:324px" valign="top"><a href="{{TILE2_CTA_URL}}" target="_blank"><img alt="{{TILE2_ALT}}" border="0" class="full_img_special" height="auto" src="https://connect.kent.edu/www/images/{{PROJECT_ID}}_PX_STORYTILE_{{TILE2_IMAGE}}.jpg" style="text-align: center;" width="324" /></a></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table align="right" border="0" cellpadding="5" cellspacing="0" class="wrapper" style="max-width: 300px; padding-left: 10px; float: left">
+              <tbody>
+                <tr>
+                  <td valign="top">
+                  <table align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                    <tbody>
+                      <tr>
+                        <td class="pad_side">
+                        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; float:right">
+                          <tbody>
+                            <tr>
+                              <td class="fix_width" style="width:15px"></td>
+                              <td class="white">
+                              <h3 class="mobile" style="font-family: 'Open+Sans', Arial, sans-serif; font-weight: bold; font-size: 24px; color: #003976; padding-right: 10px">
+                                {{TILE2_HEADLINE}}
+                              </h3>
+
+                              <p class="mobile" style="font-family: 'Open+Sans', Arial, sans-serif; font-weight: normal; font-size: 18px; color: #101010; text-align: left; padding-right: 10px; padding-bottom:10px">
+                                {{TILE2_BODY}}
+                              </p>
+
+                              <div style="text-align:center;">
+                                <!--[if mso]>
+<table align="center" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">
+                          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="{{TILE2_CTA_URL}}" style="height:50px;v-text-anchor:middle;width:220px;" arcsize="0%" stroke="f" fillcolor="#EFAB00">
+                            <w:anchorlock/>
+                            <center style="color:#003976;font-family:Arial,sans-serif;font-size:18px;font-weight:bold;">
+                              {{TILE2_CTA_TEXT}}
+                            </center>
+                          </v:roundrect>
+                          </td>
+ </tr>
+</table>
+<![endif]--><!--[if !mso]><!-- -->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                  <tbody>
+                                    <tr>
+                                      <td align="center" bgcolor="#EFAB00" style="border-radius:0px;">
+                                      <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                        <tbody>
+                                          <tr>
+                                            <td align="center" style="font-family:'Open Sans', Arial, sans-serif; font-size:18px; font-weight:bold; line-height:22px; color:#003976; text-align:center; padding:12px 24px;"><a href="{{TILE2_CTA_URL}}" style="text-decoration:none; color:#003976; display:inline-block;" target="_blank">{{TILE2_CTA_TEXT}}</a></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <!--<![endif]-->
+                              </div>
+                              </td>
+                              <td class="fix_width" style="width:15px"></td>
+                            </tr>
+                            <tr>
+                              <td class="fix_width" style="width:15px"></td>
+                            </tr>
+                            <tr>
+                              <td style="line-height: 1px; font-size: 1px; height:20px"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- STORYTILES MODULE ENDS -->

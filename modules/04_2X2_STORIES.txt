@@ -1,0 +1,228 @@
+<!--
+MODULE: 2X2 STORIES (4 stories in 2x2 grid)
+PURPOSE: Four compact stories in a grid layout
+USAGE: For showcasing multiple short stories together
+PLACEHOLDERS:
+  - {{PROJECT_ID}} - Project identifier
+  - {{STORY1_IMAGE}} - Image filename for story 1 (top-left)
+  - {{STORY1_ALT}} - Alt text for story 1
+  - {{STORY1_HEADLINE}} - Headline for story 1
+  - {{STORY1_BODY}} - Body text for story 1
+  - {{STORY1_CTA_URL}} - CTA URL for story 1
+  - {{STORY1_CTA_TEXT}} - CTA button text for story 1
+  - (Repeat for STORY2, STORY3, STORY4)
+WIREFRAME MAPPING:
+  - Extract image paths: {{PROJECT_ID}}_PX_2x2_{{DESCRIPTOR}}.jpg
+  - Images are 265px wide
+  - Top-right rounded corner on images (50px radius)
+  - Grid layout: Story 1 (top-left), Story 2 (top-right), Story 3 (bottom-left), Story 4 (bottom-right)
+NOTES:
+  - All 4 stories in ONE module (do not split)
+  - Images have border-top-right-radius: 50px
+  - 310px max-width per story container
+  - Add spacer after module (use 08_SPACER.txt)
+-->
+
+<!-- 2X2 STORIES MODULE BEGINS -->
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="table-layout: fixed; width: 650px;">
+  <tbody>
+    <!-- ROW 1: Story 1 (left) + Story 2 (right) -->
+    <tr>
+      <td class="pad_side">
+        <!-- Story 1 (Top-Left) -->
+        <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="max-width: 310px; width: 310px; float:left">
+          <tbody>
+            <tr>
+              <td align="center" valign="top"><table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="max-width: 310px">
+                  <tbody>
+                    <tr>
+                      <td class="hide" width="45"></td>
+                      <td valign="top"><table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                          <tbody>
+                            <tr>
+                              <td align="center" valign="top"><a href="{{STORY1_CTA_URL}}"><img alt="{{STORY1_ALT}}" class="full_img" height="auto" src="https://connect.kent.edu/www/images/{{PROJECT_ID}}_PX_2x2_{{STORY1_IMAGE}}.jpg" style="border: none; border-top-right-radius: 50px;" width="265"></a></td>
+                            </tr>
+                            <tr>
+                              <td height="8" style="line-height: 1px; font-size: 1px;"><p style="font-size:1px">​​&nbsp;</p></td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="grey" valign="top"><h3 class="mobile" style="font-family: 'Open+Sans', Arial, sans-serif; font-weight: bold; font-size: 24px; color: #003976; padding-left: 10px; padding-right: 10px;">{{STORY1_HEADLINE}}</h3>
+                                <p class="mobile" style="font-family: 'Open+Sans', Arial, sans-serif; font-weight: normal; font-size: 18px; color: #101010; text-align: left; padding-left: 10px; padding-right: 10px; padding-bottom:10px;">{{STORY1_BODY}}</p>
+                                <p style="font-size:1px">​​&nbsp;</p>
+                                <div style="text-align:center;">
+                                  <table border="0" cellpadding="0" cellspacing="0" align="center" role="presentation">
+                                    <tbody><tr>
+                                      <td align="center" bgcolor="#EFAB00" style="border-radius:0px;"><table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                          <tbody><tr>
+                                            <td align="center" style="font-family:'Open Sans', Arial, sans-serif; font-size:18px; font-weight:bold; line-height:22px; color:#003976; text-align:center; padding:12px 24px;"><a href="{{STORY1_CTA_URL}}" target="_blank" style="text-decoration:none; color:#003976; display:inline-block;">{{STORY1_CTA_TEXT}}</a></td>
+                                          </tr>
+                                        </tbody></table></td>
+                                    </tr>
+                                  </tbody></table>
+                                  </div></td></tr><tr>
+                                      <td height="20" style="line-height:1px; font-size:1px;">&nbsp;</td>
+                                    </tr>
+                            <tr>
+                              <td height="15" style="line-height: 1px; font-size: 1px;"></td>
+                            </tr>
+                            <tr>
+                              <td class="hide" height="40" style="line-height: 1px; font-size: 1px;"></td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Story 2 (Top-Right) -->
+        <table align="right" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="max-width: 310px; width: 310px; float:right">
+          <tbody>
+            <tr>
+              <td align="center" valign="top"><table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="max-width: 310px; width: 310px;">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top"><table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                          <tbody>
+                            <tr>
+                              <td align="center" class="pad_top" valign="top"><a href="{{STORY2_CTA_URL}}"><img alt="{{STORY2_ALT}}" class="full_img" height="auto" src="https://connect.kent.edu/www/images/{{PROJECT_ID}}_PX_2x2_{{STORY2_IMAGE}}.jpg" style="border: none; border-top-right-radius: 50px;" width="265"></a></td>
+                            </tr>
+                            <tr>
+                              <td height="8" style="line-height: 1px; font-size: 1px;"><p style="font-size:1px">​​&nbsp;</p></td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="grey" valign="top"><h3 class="mobile" style="font-family: 'Open+Sans', Arial, sans-serif; font-weight: bold; font-size: 24px; color: #003976; padding-left: 10px; padding-right: 10px;">{{STORY2_HEADLINE}}</h3>
+                                <p class="mobile" style="font-family: 'Open+Sans', Arial, sans-serif; font-weight: normal; font-size: 18px; color: #101010; text-align: left; padding-left: 10px; padding-right: 10px; padding-bottom:10px;">{{STORY2_BODY}}</p>
+                                <div style="text-align:center;">
+                                  <table border="0" cellpadding="0" cellspacing="0" align="center" role="presentation">
+                                    <tbody><tr>
+                                      <td align="center" bgcolor="#EFAB00" style="border-radius:0px;"><table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                          <tbody><tr>
+                                            <td align="center" style="font-family:'Open Sans', Arial, sans-serif; font-size:18px; font-weight:bold; line-height:22px; color:#003976; text-align:center; padding:12px 24px;"><a href="{{STORY2_CTA_URL}}" target="_blank" style="text-decoration:none; color:#003976; display:inline-block;">{{STORY2_CTA_TEXT}}</a></td>
+                                          </tr>
+                                        </tbody></table></td>
+                                    </tr>
+                                  </tbody></table>
+                                  </div></td></tr><tr>
+                                      <td height="20" style="line-height:1px; font-size:1px;">&nbsp;</td>
+                                    </tr>
+                            <tr>
+                              <td height="15" style="line-height: 1px; font-size: 1px;"></td>
+                            </tr>
+                            <tr>
+                              <td height="40" style="line-height: 1px; font-size: 1px;"></td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                      <td class="hide" style="width:45px"></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+
+    <!-- ROW 2: Story 3 (left) + Story 4 (right) -->
+    <tr>
+      <td class="pad_side">
+        <!-- Story 3 (Bottom-Left) -->
+        <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="max-width: 310px; width: 310px; float:left">
+          <tbody>
+            <tr>
+              <td align="center" valign="top"><table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="max-width: 310px">
+                  <tbody>
+                    <tr>
+                      <td class="hide" width="45"></td>
+                      <td valign="top"><table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                          <tbody>
+                            <tr>
+                              <td align="center" valign="top"><a href="{{STORY3_CTA_URL}}"><img alt="{{STORY3_ALT}}" class="full_img" height="auto" src="https://connect.kent.edu/www/images/{{PROJECT_ID}}_PX_2x2_{{STORY3_IMAGE}}.jpg" style="border: none; border-top-right-radius: 50px;" width="265"></a></td>
+                            </tr>
+                            <tr>
+                              <td height="8" style="line-height: 1px; font-size: 1px;"><p style="font-size:1px">​​&nbsp;</p></td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="grey" valign="top"><h3 class="mobile" style="font-family: 'Open+Sans', Arial, sans-serif; font-weight: bold; font-size: 24px; color: #003976; padding-left: 10px; padding-right: 10px;">{{STORY3_HEADLINE}}</h3>
+                                <p class="mobile" style="font-family: 'Open+Sans', Arial, sans-serif; font-weight: normal; font-size: 18px; color: #101010; text-align: left; padding-left: 10px; padding-right: 10px; padding-bottom:10px;">{{STORY3_BODY}}</p>
+                                <p style="font-size:1px">​​&nbsp;</p>
+                                <div style="text-align:center;">
+                                  <table border="0" cellpadding="0" cellspacing="0" align="center" role="presentation">
+                                    <tbody><tr>
+                                      <td align="center" bgcolor="#EFAB00" style="border-radius:0px;"><table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                          <tbody><tr>
+                                            <td align="center" style="font-family:'Open Sans', Arial, sans-serif; font-size:18px; font-weight:bold; line-height:22px; color:#003976; text-align:center; padding:12px 24px;"><a href="{{STORY3_CTA_URL}}" target="_blank" style="text-decoration:none; color:#003976; display:inline-block;">{{STORY3_CTA_TEXT}}</a></td>
+                                          </tr>
+                                        </tbody></table></td>
+                                    </tr>
+                                  </tbody></table>
+                                  </div></td></tr><tr>
+                                      <td height="20" style="line-height:1px; font-size:1px;">&nbsp;</td>
+                                    </tr>
+                            <tr>
+                              <td height="15" style="line-height: 1px; font-size: 1px;"></td>
+                            </tr>
+                            <tr>
+                              <td class="hide" height="40" style="line-height: 1px; font-size: 1px;"></td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Story 4 (Bottom-Right) -->
+        <table align="right" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="max-width: 310px; width: 310px; float:right">
+          <tbody>
+            <tr>
+              <td align="center" valign="top"><table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="max-width: 310px; width: 310px;">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top"><table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                          <tbody>
+                            <tr>
+                              <td align="center" class="pad_top" valign="top"><a href="{{STORY4_CTA_URL}}"><img alt="{{STORY4_ALT}}" class="full_img" height="auto" src="https://connect.kent.edu/www/images/{{PROJECT_ID}}_PX_2x2_{{STORY4_IMAGE}}.jpg" style="border: none; border-top-right-radius: 50px;" width="265"></a></td>
+                            </tr>
+                            <tr>
+                              <td height="8" style="line-height: 1px; font-size: 1px;"><p style="font-size:1px">​​&nbsp;</p></td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="grey" valign="top"><h3 class="mobile" style="font-family: 'Open+Sans', Arial, sans-serif; font-weight: bold; font-size: 24px; color: #003976; padding-left: 10px; padding-right: 10px;">{{STORY4_HEADLINE}}</h3>
+                                <p class="mobile" style="font-family: 'Open+Sans', Arial, sans-serif; font-weight: normal; font-size: 18px; color: #101010; text-align: left; padding-left: 10px; padding-right: 10px; padding-bottom:10px;">{{STORY4_BODY}}</p>
+                                <div style="text-align:center;">
+                                  <table border="0" cellpadding="0" cellspacing="0" align="center" role="presentation">
+                                    <tbody><tr>
+                                      <td align="center" bgcolor="#EFAB00" style="border-radius:0px;"><table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                          <tbody><tr>
+                                            <td align="center" style="font-family:'Open Sans', Arial, sans-serif; font-size:18px; font-weight:bold; line-height:22px; color:#003976; text-align:center; padding:12px 24px;"><a href="{{STORY4_CTA_URL}}" target="_blank" style="text-decoration:none; color:#003976; display:inline-block;">{{STORY4_CTA_TEXT}}</a></td>
+                                          </tr>
+                                        </tbody></table></td>
+                                    </tr>
+                                  </tbody></table>
+                                  </div></td></tr><tr>
+                                      <td height="20" style="line-height:1px; font-size:1px;">&nbsp;</td>
+                                    </tr>
+                            <tr>
+                              <td height="15" style="line-height: 1px; font-size: 1px;"></td>
+                            </tr>
+                            <tr>
+                              <td height="40" style="line-height: 1px; font-size: 1px;"></td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                      <td class="hide" style="width:45px"></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>
+<!-- 2X2 STORIES MODULE ENDS -->

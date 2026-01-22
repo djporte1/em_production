@@ -1,0 +1,159 @@
+<!--
+MODULE: FEATURED EVENTS
+PURPOSE: Calendar-style event listings with date boxes
+USAGE: Display upcoming alumni events
+PLACEHOLDERS (per event):
+  - {{EVENT_MONTH}} - Three-letter month abbreviation (e.g., NOV, DEC)
+  - {{EVENT_DAY}} - Day number (e.g., 5, 10, 15)
+  - {{EVENT_TIME}} - Time of event (e.g., "6-9 p.m.", "11 a.m. - 2 p.m.")
+  - {{EVENT_TITLE}} - Event name
+  - {{EVENT_URL}} - Event registration/info URL
+  - {{EVENT_LOCATION}} - Location (city, state)
+WIREFRAME MAPPING:
+  - Extract from wireframe event calendar table
+  - Each event = one <tr> block
+  - "More Events" link at bottom
+NOTES:
+  - Date box: Gold border (#EFAB00), Kent Blue text (#003976)
+  - Event title: 18px, Kent Blue, links to event URL
+  - Event location: 15px, Kent Blue, italic
+  - "MORE EVENTS ››" link: Left-aligned, Blue (#0073bd), bold, double arrows (››)
+  - Add as many events as needed (copy event block)
+  - Preceded by Section Divider with "Featured Events" title
+  - Add spacer after module (use 08_SPACER.txt)
+-->
+
+<!--FEATURED EVENTS MODULE-->
+<table align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="table-layout: fixed; min-width: 100%; width: 650px;">
+  <tbody>
+    <tr>
+      <td class="hide" width="45"></td>
+      <td class="pad_side">
+      <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="width: 600px;">
+        <tbody>
+          <tr>
+            <td>
+            <table border="0" cellpadding="0" cellspacing="0" class="wrapper" style="width: 600px;">
+              <tbody>
+                <!-- EVENT 1 -->
+                <tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" class="wrapper" style="width: 600px;">
+                    <tbody>
+                      <tr>
+                        <td valign="top">
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="max-width: 93%; width: 600px;">
+                          <tbody>
+                            <tr>
+                              <td align="center" style="width: 70px; height: 70px; border: solid .25em; border-color: #EFAB00; background-color: #fff; padding: 5px; font-family: 'Open+Sans', Arial, sans-serif;" valign="top" width="70"><strong><span style="color: #003976;">{{EVENT1_MONTH}}</span><br />
+                              <span style="font-size: 40px; display: block; color: #003976;">{{EVENT1_DAY}}</span></strong></td>
+                              <td width="20"></td>
+                              <td>
+                              <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                <tbody>
+                                  <tr>
+                                    <td class="black3" style="font-family: 'Open+Sans', Arial, sans-serif; font-size: 16px; color: #003976; font-weight: bold;">{{EVENT1_TIME}}</td>
+                                  </tr>
+                                  <tr>
+                                    <td height="6" style="line-height: 0px; font-size: 0px;"></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="grey1"><a href="{{EVENT1_URL}}"><span style="font-family: 'Open+Sans', Arial, sans-serif; font-weight: normal; font-size: 18px; color: #003976; text-decoration:none">{{EVENT1_TITLE}}</span></a></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="grey1"><span style="font-family: 'Open+Sans', Arial, sans-serif; font-weight: normal; font-size: 15px; color: #003976; font-style: italic;">{{EVENT1_LOCATION}}</span></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </td>
+                        <td class="hide" width="45"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="15" style="line-height: 0px; font-size: 0px; height: 15px;"></td>
+                </tr>
+
+                <!-- EVENT 2 -->
+                <tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" class="wrapper" style="width: 600px;">
+                    <tbody>
+                      <tr>
+                        <td valign="top">
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="max-width: 93%; width: 600px;">
+                          <tbody>
+                            <tr>
+                              <td align="center" style="width: 70px; height: 70px; border: solid .25em; border-color: #EFAB00; background-color: #fff; padding: 5px; font-family: 'Open+Sans', Arial, sans-serif;" valign="top" width="70"><strong><span style="color: #003976;">{{EVENT2_MONTH}}</span><br />
+                              <span style="font-size: 40px; display: block; color: #003976;">{{EVENT2_DAY}}</span></strong></td>
+                              <td width="20"></td>
+                              <td>
+                              <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                <tbody>
+                                  <tr>
+                                    <td class="black3" style="font-family: 'Open+Sans', Arial, sans-serif; font-size: 16px; color: #003976; font-weight: bold;">{{EVENT2_TIME}}</td>
+                                  </tr>
+                                  <tr>
+                                    <td height="6" style="line-height: 0px; font-size: 0px;"></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="grey1"><a href="{{EVENT2_URL}}"><span style="font-family: 'Open+Sans', Arial, sans-serif; font-weight: normal; font-size: 18px; color: #003976; text-decoration:none">{{EVENT2_TITLE}}</span></a></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="grey1"><span style="font-family: 'Open+Sans', Arial, sans-serif; font-weight: normal; font-size: 15px; color: #003976; font-style: italic;">{{EVENT2_LOCATION}}</span></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </td>
+                        <td class="hide" width="45"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="15" style="line-height: 0px; font-size: 0px; height: 15px;"></td>
+                </tr>
+
+                <!-- ADD MORE EVENTS AS NEEDED - Copy event block above -->
+
+                <!-- MORE EVENTS LINK -->
+                <tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" class="wrapper" style="width: 600px;">
+                    <tbody>
+                      <tr>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top"><br />
+                        <a href="https://www.kent.edu/alumni-and-giving/upcoming-events" style="text-decoration: none; font-family: 'Open+Sans', Arial, sans-serif; font-size: 18px; line-height: 20px; color: #0073bd; font-weight: bold;" target="_blank">MORE EVENTS ››</a></td>
+                      </tr>
+                      <tr>
+                        <td class="fix_height" height="40"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td class="hide" width="45"></td>
+    </tr>
+  </tbody>
+</table>
+<!--FEATURED EVENTS MODULE ENDS-->

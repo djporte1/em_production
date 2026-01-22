@@ -1,0 +1,15 @@
+<!--
+MODULE: GOLD DIVIDER
+PURPOSE: Gold dividing line between content sections
+USAGE: Use between body sections to visually separate content
+NOTES:
+  - Uses image: dividerbar_EFAB00.png (gold #EFAB00)
+  - Centered, full-width within content area
+  - Simple implementation - just wrap in centered paragraph
+-->
+
+<!-- GOLD DIVIDER -->
+<p align="center">
+  <img src="https://connect.kent.edu/www/images/dividerbar_EFAB00.png" alt="" />
+</p>
+<!-- END GOLD DIVIDER -->

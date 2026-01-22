@@ -1,0 +1,168 @@
+<!--
+MODULE: FOOTER
+PURPOSE: Newsletter footer with brand image, social icons, contact info, and links
+USAGE: Use at end of every newsletter
+PLACEHOLDERS: None (all standard Kent State content)
+NOTES:
+  - Footer image: "What sets us apart is how we come together"
+  - Social media icons: Facebook, X (Twitter), Instagram, YouTube, LinkedIn
+  - Dark blue background (#003976)
+  - Contact: 330-672-5368, alumni@kent.edu
+  - Links: Update Your Information, Make a Gift, Visit Our Site
+  - IMPORTANT: Make a Gift URL must be https://givetokent.org/
+  - All social and contact info stays the same for every newsletter
+STRUCTURE:
+  1. Footer brand image (full-width)
+  2. Social media icons (centered, dark blue background)
+  3. Contact info and links (white text on dark blue)
+  4. Closing body tag
+-->
+
+<!-- FOOTER IMAGE MODULE -->
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="table-layout: fixed; min-width: 100%; width: 650px;">
+  <tbody>
+    <tr>
+      <td>
+      <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="min-width: 100%; width: 100%;">
+        <tbody>
+          <tr>
+            <td align="center"><a href="http://www.kent.edu/alumni"><img alt="What sets us apart is how we come together" class="full_img" src="https://connect.kent.edu/www/images/NewBrandTemplate_Footer.png" /></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- #END FOOTER IMAGE MODULE -->
+
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- END MODULES -->
+    <!-- #End Main Content/Template-->
+
+    <!-- Footer -->
+    <table align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tbody>
+        <tr>
+          <td align="center">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="650">
+            <tbody>
+              <tr>
+                <td>
+                <!-- Footer Social icons -->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="width: 650px;">
+                  <tbody>
+                    <tr>
+                      <td bgcolor="#003976">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="width: 650px;">
+                        <tbody>
+                          <tr>
+                            <td height="15" style="line-height: 1px; font-size: 1px;"></td>
+                          </tr>
+                          <tr>
+                            <td align="center">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 300px;">
+                              <tbody>
+                                <tr>
+                                  <td width="34"></td>
+                                  <td width="20"></td>
+                                  <td width="34"><a href="https://www.facebook.com/ksualumni" target="_blank"><img alt="Facebook" border="0" height="40" src="https://connect.kent.edu/www/images/NewBrandTemplate_Social_Facebook.png" style="display: block;" width="40" /></a></td>
+                                  <td width="20"></td>
+                                  <td width="34"><a href="https://twitter.com/KSUAlumni" target="_blank"><img alt="Twitter" border="0" height="40" src="https://connect.kent.edu/www/images/NewBrandTemplate_Social_X.png" style="display: block;" width="40" /></a></td>
+                                  <td width="20"></td>
+                                  <td width="40"><a href="https://www.instagram.com/ksualumni" target="_blank"><img alt="instagram" border="0" height="40" src="https://connect.kent.edu/www/images/NewBrandTemplate_Social_Instagram.png" style="display: block;" width="40" /></a></td>
+                                  <td width="20"></td>
+                                  <td width="40"><a href="https://www.youtube.com/channel/UCn1cZlCivJrtqNOK9I8T7dw" target="_blank"><img alt="youtube" border="0" height="40" src="https://connect.kent.edu/www/images/NewBrandTemplate_Social_YouTube.png" style="display: block;" width="40" /></a></td>
+                                  <td width="20"></td>
+                                  <td width="40"><a href="https://www.linkedin.com/groups/69125/" target="_blank"><img alt="Linkedin" border="0" height="40" src="https://connect.kent.edu/www/images/NewBrandTemplate_Social_LinkedIn.png" style="display: block;" width="40" /></a></td>
+                                  <td width="20"></td>
+                                  <td width="40"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- #end Footer Social icons -->
+
+                <!-- Footer links -->
+                <table align="center" bgcolor="#003976" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="background: #003976;" width="650">
+                  <tbody>
+                    <tr>
+                      <td class="pad_side">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="650">
+                        <tbody>
+                          <tr>
+                            <td class="fix_height" height="35"></td>
+                          </tr>
+                          <tr>
+                            <td align="center">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="650">
+                              <tbody>
+                                <tr>
+                                  <td class="hide" width="75"></td>
+                                  <td>
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="500">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center" class="grey" style="font-family: 'Open+Sans', Arial, sans-serif; line-height: 22px; background-color: transparent;"><span style="font-weight: bold; color: #ffffff; font-size: 14px; font-family: 'Open+Sans', Arial, sans-serif;">Kent State University</span></td>
+                                      </tr>
+                                      <tr>
+                                        <td height="20"></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="center" class="grey" style="font-family: 'Open+Sans', Arial, sans-serif; font-size: 11px; line-height: 22px; color: #ffffff; background: transparent;"><span style="font-weight: bold; color: #ffffff; font-family: 'Open+Sans', Arial, sans-serif; font-size: 11px;"><img src="https://connect.kent.edu/www/images/NewBrandTemplate_Footer_Phone_13.png" /></span> &nbsp; <a href="tel:330-672-5368" style="color: #ffffff; text-decoration: none; font-family: 'Open+Sans', Arial, sans-serif; font-size: 11px;">330-672-5368</a> &nbsp;&nbsp; <span style="font-weight: bold; color: #ffffff; font-family: 'Open+Sans', Arial, sans-serif; font-size: 11px;"><img src="https://connect.kent.edu/www/images/NewBrandTemplate_Footer_Email_13.png" /> &nbsp; </span><a href="mailto:alumni@kent.edu" style="text-decoration: none; color: #ffffff; font-size: 11px; font-family: 'Open+Sans', Arial, sans-serif;">alumni@kent.edu</a></td>
+                                      </tr>
+                                      <tr>
+                                        <td height="18"></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="center" class="grey" style="font-family: 'Open+Sans', Arial, sans-serif; font-size: 11px; line-height: 22px; color: #ffffff; background: transparent;"><a href="https://connect.kent.edu/register/update" style="color: #ffffff;"><span style="text-decoration: none; font-family: 'Open+Sans', Arial, sans-serif'; color:#ffffff; font-size: 11px;">Update Your Information</span></a> | <a href="https://givetokent.org/" style="color: #ffffff;"><span style="text-decoration: none; font-family: 'Open+Sans', Arial, sans-serif'; color:#ffffff; font-size: 11px">Make a Gift</span></a> | <a href="https://www.kent.edu/alumni-and-giving" style="color: #ffffff;"><span style="text-decoration: none; font-family: 'Open+Sans', Arial, sans-serif'; color:#ffffff; ; font-size: 11px">Visit Our Site</span></a></td>
+                                      </tr>
+                                      <tr>
+                                        <td height="20"></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  </td>
+                                  <td class="hide" width="75"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fix_height" height="35"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- #end Footer links -->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          </td>
+        </tr>
+        <!-- Emailer Ends Here //-->
+      </tbody>
+    </table>
+    <!-- End Footer -->
+
+  </body>
+</html>
